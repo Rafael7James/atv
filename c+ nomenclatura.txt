@@ -1,0 +1,42 @@
+Nome e sobrenome(fgets)
+
+fgets(nome, 3 stdin);
+nome[strcspn(nome,"\n")] = 0;
+
+Nome e sobrenome(gets)
+
+obs: colocar um número acima de caracteres
+
+gets(nome);
+
+limpa tela
+system("cls || clear"); 
+
+Leia:
+printf  
+
+porcentagem
+%d ou %i = decimal
+variável: Int
+%f = float
+
+%s = cadeia de caracteres 
+variavel: string
+
+%c = character
+variável: char
+
+/n = escreval
+
+limpa o cash de imput
+fflush(stdin); 
+
+biblioteca
+
+#include <stdio>.h
+#include <stdlib>.h
+
+Condicional: SE-SENÃO
+if
+ex: if(media >= 7)
+printf("Aprovado!");
