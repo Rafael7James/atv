@@ -1,0 +1,3 @@
+OU - OR -  ||
+E - AND - &&
+NÃO - NOT
