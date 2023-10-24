@@ -33,10 +33,27 @@ fflush(stdin);
 
 biblioteca
 
-#include <stdio>.h
-#include <stdlib>.h
+#include <stdio>.h - No cabeçalho <stdio.h> estão localizadas as funções referentes às operações nas quais os mecanismos operam em função da entrada e da saída padrão, bem como em arquivos também. Portanto, por meio das variáveis, macros, e funções é possível realizar tarefas de leitura e escrita, tanto por meio da entrada e saída disponibilizada pela máquina, quanto por escrita e leitura em arquivos.
+
+#include <stdlib>.h - No cabeçalho stdlib.h estão localizadas as funções responsáveis pela manipulação da alocação de memória, e da desalocação também, bem como funções para converter números que estão representados em strings para algum tipo de dado responsável por representar números, como, por exemplo, double, entre outras funcionalidades úteis, como funções de algoritmos de ordenação.
+
+#include <Locale.h> - Idioma
+
+#include <string.h> - Esta é uma biblioteca padrão da linguagem C. Nela estão contidos protótipos utilizados para a manipulação de strings, também conhecidos como array de chars. Estas funções são capazes desde a contagem, cópia e concatenação, comparação e diversas outras modificações como podemos ver nos exemplos a seguir.
 
 Condicional: SE-SENÃO
 if
 ex: if(media >= 7)
 printf("Aprovado!");
+
+Case Switch
+Ex:
+case switch (Mês)
+{
+case 1:
+    printf("Janeiro")
+    break;
+
+Laços de repetição
+While- Loop
+
