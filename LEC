@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int main(){
+
+float CA, CC, CPA, PU;
+float LEC;
+float raiz;
+float qtcompra;
+setlocale(LC_ALL, "portuguese");
+ printf("*Lote Econômico de Compras (LEC)*\n\n");
+ printf("CA = Consumo Anual em Quantidade.\n");
+ printf("CC = Custo do Pedido de Compra.\n");
+ printf("CPA = Custo do Material Armazenado.\n");
+ printf("PVC = Preço Unitário.\n\n");
+ 
+ printf("Digite o CA: ");
+ scanf("%f", &CA);
+
+ printf("Digite o CC: ");
+ scanf("%f", &CC);
+
+ printf("Digite o CPA: ");
+ scanf("%f", &CPA);
+ 
+ printf("Digite o PU: ");
+ scanf("%f", &PU);
+ 
+ LEC = (2 * CA * CC) / (CPA * PU);
+ raiz = sqrt(LEC);
+ qtcompra = CA / raiz ;
+ 
+ printf("\nO resultado da divisão é: %f\n", LEC);
+ printf("O LEC é: %f\n", raiz);
+ printf("A Quantidade de compra é: %f", qtcompra);
+    return 0;
+}
