@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    float invest, saldo, saldoTotal = 0.0, mediaSaldo, mesesReco;
+    int media;
+
+    // Entrada do valor do investimento
+    printf("Digite o valor do investimento: ");
+    scanf("%f", &invest);
+
+    // Entrada da quantidade de meses
+    printf("Digite a quantidade de meses: ");
+    scanf("%d", &media);
+
+    if (media > 0) {
+        // Loop para obter o saldo de cada mês
+        for (int i = 0; i < media; i++) {
+            printf("\nSaldo do mês %d: ", i + 1);
+            scanf("%f", &saldo);
+            saldoTotal += saldo;
+        }
+
+        // Cálculo do saldo médio
+        mediaSaldo = saldoTotal / media;
+        printf("Esse é o valor médio de um mês: %.2f\n", mediaSaldo);
+
+        // Cálculo da quantidade de meses para recuperar o investimento
+        if (mediaSaldo > 0) {
+            mesesReco = invest / mediaSaldo;
+            printf("Essa é a quantidade de meses para recuperar: %.2f\n", mesesReco);
+        } else {
+            printf("O saldo médio é zero. Não é possível calcular o tempo de recuperação.\n");
+        }
+    } else {
+        printf("A quantidade de meses deve ser maior que zero.\n");
+    }
+
+    return 0;
+}
